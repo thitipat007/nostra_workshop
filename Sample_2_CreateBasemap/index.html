@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nostra workshop</title>
+
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./css/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/nostraMap.css" />
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css" />
+
+    <script type="text/javascript"
+        src="//api.nostramap.com/nostraapi/v2.0?key=GOxQQtdmC5KMtuUxe(KnbpBxyLXlWIRuJU1e(Wz0nfHiBIeRipI)oKCFHvA)4d9asslulelApKSbw8i(CuGkqb0=====2"></script>
+
+    <script type="text/javascript" src="./js/nostra.map.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid" style="padding: 0px;  height: 100vh;">
+        <div class="col-md-3 ns-dashboard">
+            <div class="col-md-12">
+                <div>
+                     Basemap
+                </div>
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-secondary" id="btnStreetMap">Street Map</button>
+                    <button type="button" class="btn btn-secondary" id="btnImagery">Imagery</button>
+                    <button type="button" class="btn btn-secondary" id="btnOpenStreetMap">Open Street Map</button>
+                </div>
+            </div>
+            <div class="col-md-12">
+               <div>
+                    Spacial Layer
+               </div> 
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-secondary" id="btnNOSTRAGuide">NOSTRA Guide</button>
+                    <button type="button" class="btn btn-secondary" id="btnNOSTRATraffic">NOSTRA Traffic</button>
+                    <button type="button" class="btn btn-secondary" id="btnWeatherForecast">Weather Forecast</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div id="divMap"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

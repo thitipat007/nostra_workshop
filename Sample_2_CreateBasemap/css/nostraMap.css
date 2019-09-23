@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    height: 100%;
+}
+#divMap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.ns-dashboard{
+    background-color: #2B2727;
+    color: aliceblue;
+    height: 100vh;
+} 

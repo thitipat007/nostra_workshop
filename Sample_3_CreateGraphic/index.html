@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nostra workshop</title>
+
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./css/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css" />
+
+    <link rel="stylesheet" href="./css/nostraMap.css" />
+
+    <script type="text/javascript"
+        src="//api.nostramap.com/nostraapi/v2.0?key=GOxQQtdmC5KMtuUxe(KnbpBxyLXlWIRuJU1e(Wz0nfHiBIeRipI)oKCFHvA)4d9asslulelApKSbw8i(CuGkqb0=====2"></script>
+
+    <script type="text/javascript" src="./js/nostra.map.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid" style="padding: 0px;  height: 100vh;">
+        <div class="row">
+
+            <div class="col-md-3 ns-dashboard">
+                <div class="col-md-12">
+                    <div>
+                        Basemap
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary btn-sm" id="btnStreetMap">Street Map</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="btnImagery">Imagery</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="btnOpenStreetMap">Open Street Map</button>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12">
+                    <div>
+                        Spacial Layer
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary btn-sm" id="btnNOSTRAGuide">NOSTRA Guide</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="btnNOSTRATraffic">NOSTRA Traffic</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="btnWeatherForecast">Weather
+                            Forecast</button>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12">
+
+                    <button type="button" class="btn btn-secondary btn-sm" id="btnCreateLocation">Create Location</button>
+                    <div class="col-md-12" id="createPinPanal" style="display: none;">
+                        <div class="form-group">
+                            <label for="locationNameInput">location name</label>
+                            <input type="text" class="form-control" id="locationNameInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="descriptionInput">description</label>
+                            <textarea class="form-control" id="descriptionInput" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="btnAddLocation">Add</button>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12">
+                    <div id="locationList">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-9">
+                <div id="divMap"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

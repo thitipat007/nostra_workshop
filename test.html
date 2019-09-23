@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript" src="./Sample_1_CreateMapAndConfiguration/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            let url = "https://api.nostramap.com/Service/V2/Location/Identify?key=GOxQQtdmC5KMtuUxe(KnbpBxyLXlWIRuJU1e(Wz0nfHiBIeRipI)oKCFHvA)4d9asslulelApKSbw8i(CuGkqb0=====2&lat=13.7654611&lon=100.488081"
+
+            $.ajax({
+                url: url,
+                dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+                success: function (json) {
+                    // do stuff with json (in this case an array)
+                    alert("Success", json);
+                },
+                error: function () {
+                    alert("Error");
+                }
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
